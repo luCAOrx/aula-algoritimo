@@ -1,0 +1,20 @@
+<html>
+    <script>
+        /*
+        let soma = 0;
+        for (let i = 0; i < 4; i++) {
+            let nota = parseFloat(prompt('Nota' +i));
+            soma = soma + nota;
+        }
+        let media = soma /4;
+        alert('A media é ' + media);
+        */
+        let soma = 0;
+        for (var contador = 1; contador <= 4; contador++) {
+            let nota = parseFloat(prompt('Nota' +contador));
+            soma += nota;
+        }
+        let media = soma / (contador-1);
+        alert('A media é ' + media);
+    </script>
+</html>

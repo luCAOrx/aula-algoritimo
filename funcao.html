@@ -1,0 +1,25 @@
+<html>
+    <script>
+        function ehNumero(numero) {
+            return !isNaN(numero);
+        }
+        function soNumero(texto) {
+            let numero = '';
+            do {
+                numero = prompt(texto);
+                numero = parseFloat(numero);
+                if (ehNumero(numero)) {
+                    return numero;
+                } 
+            } while(!ehNumero(numero));
+        }
+
+        let numero1 = soNumero('Diga um número');
+        let numero2 = soNumero('Diga um número');
+        alert(numero1 + numero2);
+
+        function fatorialR(numero) {
+            return numero == 1 ? 1 : numero * fatorialR(numero -1);
+        }
+    </script>
+</html>
